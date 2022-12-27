@@ -19,14 +19,17 @@
 <body>
     <header>
         <!--logo cliquable-->
-        <div>
-            <img class="logo" src="./images/logo/Booki@3x.png">
+        <div class="logo">
+            <a href="index.html"><img id="logo" src="./images/logo/Booki@3x.png"
+                    alt="Booki Trouver votre hebergements pour des vacances de réve"
+                    title="Booki Trouver votre hebergements pour des vacances de réve"> </a>
+        
         </div>
         <!--menu de navigation-->
         <nav>
             <ul class="menu">
-                <li hebergement>
-                    <a href="">Hébergement</a>
+                <li hebergements>
+                    <a href="">Hébergements</a>
                 </li>
                 <li activités>
                     <a href="">Activités</a>
@@ -35,11 +38,11 @@
             </ul>
         </nav>
 
-        <h1>Trouver votre hébergement pour des vacances de rêve</h1>
-        <h2>En plein centre ville ou en pleine nature</h2>
-
     </header>
     <main>
+
+        <h1>Trouver votre hébergement pour des vacances de rêve</h1>
+        <h2>En plein centre ville ou en pleine nature</h2>
         <div>
             <!--ici création  entrée texte-->
             <form <i class="fa-solid fa-location-dot"></i>
@@ -47,26 +50,29 @@
                 <button>Rechercher</button>
             </form>
         </div>
+<!--partie filtres-->
+    <div id="mes-filtres">
         <div>
-
-            <h3>Filtres</h3>
+            <p>Filtres</p>
         </div>
-        <div>
-            <i></i>
+        <div class="filtres">
+            <i class="fa-solid fa-money-bill-wave"></i>
             <p>Econimique</p>
         </div>
-        <div>
-            <i></i>
+        <div class="filtres">
+            <i class="fa-sharp fa-solid fa-child"></i>
             <p>Familial</p>
         </div>
-        <div>
-            <i></i>
+        <div class="filtres">
+            <i class="fa-solid fa-heart"></i>
             <P>Romantique</P>
         </div>
-        <div>
-            <i></i>
+        <div class="filtres">
+            <i class="fa-solid fa-dog"></i>
             <p>Animaux autorisés</p>
         </div>
+    </div>
+
         <div>
 
             <p>plus de 500 logements sont disponibles dans le centre ville</p>
