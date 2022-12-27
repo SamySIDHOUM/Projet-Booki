@@ -5,14 +5,52 @@
     margin: 0;
     padding: 0;   
 }
-
-.logo{
-    height: 55px;
-    padding-top: 25px;
-    padding-left: 45px;   
+li{
+    list-style-type: none;
+    margin-left: 40px;
 }
+/* le header du site */
+/* logo */
+header{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 23px;
+}
+.logo{
+    height: 19px;
+    padding-top: 0px;
+    padding-left: 0px;   
+}
+img#logo{
+    height: 19px;
+}
+/* menu */
 ul.menu{
     display: flex;
     font-weight: 500;
-    justify-content: flex-end;
+}
+li.hebergements, li.activites{
+    text-align: center;
+    justify-content: space-between;
+   
+    
+}
+
+/*corps de page */
+h1{
+    font-size: 22px;
+    font-weight: 700;
+    margin: 0;
+}
+h2{
+    font-size: 19px;
+    font-weight: 400;
+    margin-bottom: 55px;
+
+}
+#mes-filtres{
+    display: flex;
+}
+.filtres{
+    display: flex;
 }
