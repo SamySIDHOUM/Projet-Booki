@@ -31,26 +31,17 @@ ul.menu{
 }
 li.hebergements, li.activites{
     text-align: center;
-    justify-content: space-between;
-   
-    
+    justify-content: space-between;   
 }
-
 /*corps de page */
 h1{
     font-size: 22px;
     font-weight: 700;
     margin: 0;
 }
-h2{
-    font-size: 19px;
-    font-weight: 400;
-    margin-bottom: 55px;
-
-}
 #mes-filtres{
     display: flex;
 }
-.filtres{
-    display: flex;
+.fa-star{
+    color: #0065fc;
 }
