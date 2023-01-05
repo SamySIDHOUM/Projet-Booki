@@ -1,65 +1,84 @@
 
-*{
+body{
     font-family: 'Raleway', sans-serif;
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;   
+    max-width: 1400px;
+    margin: auto;
+}
+main, header, footer{
+    width: 90%;
+    margin-left: 5%;
 }
 li{
     list-style-type: none;
-    margin-left: 40px;
+   /*    margin-left: 40px;
+    padding-top: 48px;
+    padding-right: 77px;*/ 
 }
 a{
     text-decoration: none;
+    color: #000000;
 }
 /* le header du site */
-/* logo */
 header{
     display: flex;
     justify-content: space-between;
-    margin-bottom: 23px;
+    height: 40px;
+}
+nav{
+    width: 30%;
 }
 .logo{
-    height: 19px;
-    padding-top: 0px;
-    padding-left: 0px;   
+    height: 100%;
+    width: 7%;
 }
-img#logo{
-    height: 19px;
+.logo img{
+    height: 80%;
+    width: 100%;
 }
 /* menu */
-ul.menu{
+.menu{
     display: flex;
+    justify-content: space-around;
     font-weight: 500;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+}
+.menu li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*bordure bleu du nav*/
+.menu li:hover{
+    border-top: #0065FC 2px solid;
+}
+.menu a:hover{
+    color: #0065FC;
 }
 li.hebergements, li.activites{
     text-align: center;
     justify-content: space-between;   
     cursor: pointer;
  }
- /*bordure bleu du nav*/
- li:hover{
-    border-top: #0065FC 2px solid;
-    padding-top: 0px;
-
- }
+ 
 /*corps de page */
 h1{
     font-size: 22px;
     font-weight: 700;
-    margin: 0;
+    padding-top: 19px;
 }
 p{
     padding-bottom: 16px;
     font-weight: 400;
-}
-form{
-    display: flexs;
+   }
+/*section recherche*/
+#recherche form{
+    display: flex;   
 }
 input{
     padding: 15px;
     border: 1px solid #f2f2f2;
-    border-radius: 15px;
     text-align: center;
 }
 ::placeholder{
@@ -75,14 +94,20 @@ form button{
     padding: 15px 16px;
     gap: 10px;
 }
-/*localisation*/
+  /*localisation*/
+form .fa-location-dot{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .fa-location-dot{ 
     width: 50px;
     height: 49px;
     border-radius: 15px 0px 0px 15px;
-    background: #F2F2F2;
+    background-color: #F2F2F2;
 }
-/*partie filtres*/
+
+  /*partie filtres*/
 .noir{
     color: #000000;
 }
@@ -94,28 +119,42 @@ form button{
     width: 914px;
     height: 50px;
     left: 62px;
-    top: 280px;
+    top: 10px;
+    margin-top: 3%;
   }
 #titre-filtres{
     font-weight: 700;
-    width: 54px;
+    width: 10%;
+}
+#filtres-catégories{
+    display: flex;
+    justify-content: space-around;
+    width: 90%;
 }
 .filtres{
-   background: #F0F2F6;
-   font-weight: 700;
-   font-size: 17px;
-   line-height: 20px;
-   margin-right: 12px;
-   cursor: pointer;
+    background: white;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 20px;
+    margin-right: 12px;
+    cursor: pointer;
+}
+.fa-money-bill-wave, .fa-sharp, .fa-heart, .fa-dog  {
+    margin-right: 10px;
+    margin-left: 10px;
 }
 .filtres:hover{
-    background-color: #0065fc;
+    background-color: #DEEBFF;
 }
+  /*info*/
 button{
     background: #DEEBFF;
     border: 2px solid #D9D9D9;
     border-radius: 25px;
-}
+   }
+.info{
+    margin-top: 2%;
+    }
 .info p{
     display: initial;
 }
@@ -123,44 +162,108 @@ button{
     border-radius: 50px;
     border: 1px solid #D9D9D9;
     padding: 4px 10px 7px 10px;
-    
+    margin-right: 11px;
 }
 /*section hebergements*/
-/*couleurs etoiles*/
+   /*couleurs etoiles*/
 .bleues{
     color: #0065fc;
 }
 .grises{
     color: gray;
 }
-#hebergements{
-    Width:880px;
+.hebergement-marseille{
+    Width:65%;
     Height:626px;
     background: #F2F2F2;
     border-radius: 20px;
+    margin-top: 46px;
 }
-.hebergement-marseille{
+.hebergement-marseille h2{
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 26px;
+}
+.hebergement-marseille.cartes{
     font-weight: 700;
     font-size: 22px;
     line-height: 26px;
 }
 .cartes{
     background: #FFFFFF;
-    border-radius: 20px;
     box-sizing: border-box;
     position: absolute;
     border: 5px solid #FFFFFF;
     border-radius: 20px 20px 0px 0px;
-    Width:246px;
+    Width:30%;
     Height:199px;
-    Radius:20px;
-}
+    margin: 13px;
+  }
 .cartes img{
-    Width:246px;
+    Width: 30%;
     Height:124px;
     border: 5px solid #FFFFFF;
     border-radius: 20px 20px 0px 0px;
     object-fit: cover;
 }
+.hebergement-marseille figcaption{
+    margin-left: 16px;
+    margin-top: 9px;
+}
+.hebergement-marseille.etoiles{
+    width: 12px;
+    height: 12px; 
+    margin-top: 9px;
+    font-size: small;
+}
+/*populaire*/
+.populaire{
+    Width:30%;
+    Height:625px;
+    background: #F2F2F2;
+    border-radius:20px;
+    margin-top: 46px;
+}
+.fa-chart-line {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.fa-chart-line{
+    Width:18px;
+    Height:15.75px;
+}
+  /*pour manipuler les deux boites*/
+#hebergements{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.cartes-pop{
+    Width: 70%;
+    Height:199px;
+    background: #FFFFFF;
+    box-sizing: border-box;
+    position: absolute;
+    border: 5px solid #FFFFFF;
+    border-radius: 20px ;
+    margin: 13px;
+    
+}
+.cartes-pop img{
+    width: 50%; /*a definir un %*/
+    Height:144px;
+    border: 5px solid #FFFFFF;
+    border-radius: 20px 0px 0px 20px;
+    object-fit: cover;
+    display: initial;
+}
+/*pour mettre h3,p,etoiles sur la droite de img*/
+.cartes-pop figcaption{
+    display: flex;
+    flex-direction: column;
+}
+
+
 
 
