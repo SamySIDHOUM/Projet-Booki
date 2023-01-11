@@ -68,17 +68,17 @@ h1{
     font-weight: 700;
     padding-top: 19px;
 }
-p{
+#recherche p{
     padding-bottom: 16px;
     font-weight: 400;
-   }
+}
 /*section recherche*/
 #recherche form{
     display: flex;   
 }
 input{
     padding: 15px;
-    border: 1px solid #f2f2f2;
+    border: 1px solid #F2F2F2;
     text-align: center;
 }
 ::placeholder{
@@ -88,7 +88,7 @@ input{
 }
 form button{
     color: #FFFFFF;
-    background-color: #0065fc;
+    background-color: #0065FC;
     border: 1px solid #0065FC;
     border-radius: 0px 15px 15px 0px;
     padding: 15px 16px;
@@ -106,13 +106,12 @@ form .fa-location-dot{
     border-radius: 15px 0px 0px 15px;
     background-color: #F2F2F2;
 }
-
   /*partie filtres*/
 .noir{
     color: #000000;
 }
 .bleues{
-    color: #0065fc;
+    color: #0065FC;
 }
 #mes-filtres{
     display: flex;
@@ -122,7 +121,7 @@ form .fa-location-dot{
     top: 10px;
     margin-top: 3%;
   }
-#titre-filtres{
+#titre-filtres{ /*regler le probléme de taille*/
     font-weight: 700;
     width: 10%;
 }
@@ -139,10 +138,17 @@ form .fa-location-dot{
     margin-right: 12px;
     cursor: pointer;
 }
-.fa-money-bill-wave, .fa-sharp, .fa-heart, .fa-dog  {
-    margin-right: 10px;
-    margin-left: 10px;
+.filtre{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 20px;
 }
+.filtre span{
+    margin-left: 10px;
+    margin-right: 20px;
+}
+
 .filtres:hover{
     background-color: #DEEBFF;
 }
@@ -172,46 +178,66 @@ button{
 .grises{
     color: gray;
 }
-  /*hebergement à marseille*/
+    /*pour manipuler les deux boites*/
+#hebergements{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+/*hebergement à marseille*/
 .hebergement-marseille{
-    Width:65%;
-    Height:626px;
+    width:65%;
+    height:626px;
     background: #F2F2F2;
     border-radius: 20px;
     margin-top: 3%;
 }
 .hebergement-marseille h2 {
     font-weight: 700;
+    width: 100%;
     margin-left: 40px;
     margin-top: 42px;
 }
-.hebergement-marseille .cartes{
+.cartes{
+    width: 100%;
+    height: 80%;
+    display: flex;
+    margin: 0;
+    flex-wrap:wrap;
+    justify-content: space-around;
+}
+.carte{
     width: 30%;
+    height: 40%;
     background: #FFFFFF;
     border-radius: 20px;
-    margin-left: 40px;
+    box-shadow: 0px 0px 10px 10px #DEEBFF;
 }
-.cartes img {
-    Width: 94%;
-    Height: 124px;
-    border: 5px solid #FFFFFF;
-    border-radius: 20px 20px 0px 0px;
+.carte figure{
+    width: 96%;
+    height: 96%;
+    margin: 2%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.carte img{
+    width: 100%;
+    height: 60%;
     object-fit: cover;
-   }
-.cartes h3{
+    border-radius: 20px 20px 0px 0px;
+}
+.carte figcaption{
+    width: 96%;
+    height: 38%;
+    margin:1% 2% 1% 2%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.carte h3{
+    margin: 0;
     font-weight: 700;
-    font-size: 16px;
-    line-height: 19px;
 }
-.cartes figcaption{
-    margin-left: 16px;
-    margin-right: 26px;
-    margin-top: 11px;
-}
-.cartes figure{
-    margin:0
-}
-
 
 /*populaire*/
 .populaire{
@@ -220,12 +246,6 @@ button{
     background: #F2F2F2;
     border-radius:20px;
     margin-top: 3%;
-}
-  /*pour manipuler les deux boites*/
-#hebergements{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
 }
 .populaire h2,.fa-chart-line{
     display: inline;
@@ -236,30 +256,84 @@ button{
     Width:18px;
     display: inline;
 }
-.populaire .cartes-pop{
+.cartes-pop{
+    width: 100%;
+    height: 80%;
+    display: flex;
+    margin: 0;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.carte-pop{
+    width: 80%;
+    height: 30%;
     background: #FFFFFF;
     border-radius: 20px;
-    margin-top: 26px;
-    margin-left: 37px;
-    margin-right: 40px; 
+    box-shadow: 0px 0px 10px 10px #DEEBFF;
+    margin-top: 10%;
 }
-.cartes-pop img{
-    Width:40%;
-    Height:144px;
-    display: inline;
-    border: 5px solid #FFFFFF;
-    border-radius: 20px 0px 0px 20px;
-    object-fit: cover;
-}
-  /*pour les mettre cote à cote */
-.cartes-pop figure{
+.carte-pop figure{
+    width: 96%;
+    height:96%;
+    margin: 2%;
     display: flex;
-    flex-direction: row;
-    margin-left: 15px;
+    flex-direction: initial;
 }
-.cartes-pop figure{
+.carte-pop img{
+    width: 40%;
+    height: 96%;
+    object-fit: cover;
+    border-radius: 20px 0px 0px 20px;;
+}
+.carte-pop figcaption{
+    width: 60%;
+    margin-left: 4%; 
+}
+.carte-pop.etoiles{
+    margin-bottom: 2%;
+}
+
+
+/* partie activites*/
+#activites{
+    margin-top: 60px;
+}
+#activites h2{
+    font-weight: 700;
+    font-size: 22px;
+}
+#activites figure{
+    Width:20%;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px 10px #F2F2F2;
     margin: 0;
 }
+#activites img{
+    width: 100%;
+    height: 389px;
+    object-fit: cover;
+    border-radius: 20px 20px 0px 0px;
+}
+#activites h3{
+    padding: 21px;
+    margin: 0;
+}
+/* position des cartes activites
+#activites a{
+   display: flex;
+   flex-direction: column;
+} */
+/*footer*/
+footer{
+    background: #F2F2F2;
+    Width:90%;
+    Height:225px;
+    margin-top: 61px;
+    display: flex;
+    flex-direction: row;
+}
+
+
 
 
 
