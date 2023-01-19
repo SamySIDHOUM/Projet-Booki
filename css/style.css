@@ -86,9 +86,6 @@ input{
     font-weight: 700;
     font-size: 18px;
 }
-form .fa-magnifying-glass{
-    display: none;
-}
 form button{
     color: #FFFFFF;
     background-color: #0065FC;
@@ -96,6 +93,12 @@ form button{
     border-radius: 0px 15px 15px 0px;
     padding: 15px 16px;
     gap: 10px;
+}
+.btn-texte{
+    display: flex;
+}
+.btn-icone{
+    display:none;
 }
   /*localisation*/
 form .fa-location-dot{
@@ -118,13 +121,13 @@ form .fa-location-dot{
 }
 #mes-filtres{
     display: flex;
-    width: 914px;
+    width: 97%;/*914px;*/
     height: 50px;
     left: 62px;
     top: 10px;
     margin-top: 3%;
   }
-#titre-filtres{ /*regler le probléme de taille*/
+#titre-filtres{ 
     font-weight: 700;
     width: 10%;
 }
@@ -197,20 +200,18 @@ button{
 }
 .hebergement-marseille h2 {
     font-weight: 700;
-    width: 100%;
-    margin-left: 40px;
-    margin-top: 42px;
+    width: 92%;
+    margin-left: 4%;
+    margin-top: 2%;
 }
 .cartes{
-    width: 100%;
-    /*width: 95%;*/
+    width: 92%;
     height: 80%;
     display: flex;
     margin: 0;
-    /*margin-left: 2.5%;
-    margin-right: 2.5%;*/
+    margin-left: 4%;
     flex-wrap:wrap;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 .carte{
     width: 30%;
@@ -246,10 +247,10 @@ button{
 }
 .hebergement-marseille p{
     font-weight: 700;
-    width: 95%;
+    width: 96%;
     height: 21px;
     font-size: 18px;
-    margin: 0% 0% 0% 5%;
+    margin: 0% 0% 0% 4%;
     
     
 }
@@ -263,8 +264,8 @@ button{
 }
 .populaire h2,.fa-chart-line{
     display: inline;
-    margin-left: 37px;
-    margin-top: 41px;
+    margin-left: 10%;
+    margin-top: 7%;
 }
 .fa-chart-line{
     Width:18px;
@@ -315,9 +316,6 @@ button{
     margin-bottom: 20%;
     font-weight: 400;
 }
-
-
-
 /* partie activites*/
 #activites{
     margin-top: 60px;
@@ -384,16 +382,81 @@ footer h3{
 footer section{
     width: 33%;
     margin-top: 2%;
-    /*display: flex;
-    flex-direction: column; */
 }
 footer ul{
     font-weight: 400;
     font-size: 16px;
-    line-height: 19px;
+    /*line-height: 19px;*/
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;  
 }
 footer li{
-   padding-left: 0;
+    padding-left: 0; 
+    padding-bottom: 3%;  
+    line-height: 19px;
+}
+/* le responsive*/
+  /*tablette*/
+@media screen and (min-width:768px) and (max-width:991px){
+    .logo img{
+        width: 100px;
+        margin-top: 13%;
+    }
+    #mes-filtres{
+        width: 97%;
+    }
+    #titre-filtres{
+        width: 10%;
+    }
+    #filtres-catégories{
+        width: 90%;
+    }
+    .hebergement-marseille{
+        width: 100%;
+    }
+    .populaire{
+        width: 100%;
+        height: 278px;
+    }
+    .populaire h2, .fa-chart-line{
+        margin-left: 4%;
+    }
+    .cartes-pop{
+        width: 96%;
+        margin-left: 2%;
+    }
+    .carte-pop{
+        width: 30%;
+        Height:144px;
+    }
+  
+    
+}
+  /*mobile*/
+@media screen and (max-width:767px){
+    #hebergements{
+        display: flex;
+        flex-wrap: wrap-reverse;
+        justify-content: space-between;
+    }
+    .hebergement-marseille{
+        width: 100%;
+    }
+    .carte{
+        width: 100%;
+    }
+    .populaire{
+        width: 100%;
+        background-color: none;
+        border-radius: 0;
+    }
+    .btn-texte{
+        display: none;
+   } 
+    .btn-icone{
+        display: flex;
+   }
 }
 
 
