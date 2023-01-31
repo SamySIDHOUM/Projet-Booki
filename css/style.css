@@ -163,7 +163,9 @@ form .fa-location-dot{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-left: 20px;
+   /* margin-left: 20px;*/
+    margin: 0;
+    width: 100%;
 }
 .filtre span{
     margin-left: 10px;
@@ -275,8 +277,8 @@ button{
 }
 /*populaire*/
 .populaire{
-    Width:30%;
-    Height:625px;
+    width:30%;
+    height:625px;
     background: #F2F2F2;
     border-radius:20px;
     margin-top: 3%;
@@ -287,7 +289,7 @@ button{
     margin-top: 7%;
 }
 .fa-chart-line{
-    Width:18px;
+    width:18px;
     display: inline;
 }
 .cartes-pop{
@@ -351,7 +353,7 @@ button{
     font-size: 22px;
 }
 .activite{
-    Width: 22%; 
+    width: 22%; 
     height: 80%;
     border-radius: 20px;
     box-shadow: 0px 0px 10px 10px #F2F2F2;
@@ -385,8 +387,8 @@ button{
 /*footer*/
 footer{
     background: #F2F2F2;
-    Width:90%;
-    Height:225px;
+    width:90%;
+    height:225px;
     margin-top: 61px;
     display: flex;
     flex-direction: row;
@@ -421,6 +423,7 @@ footer li{
 /*header*/
     .logo img{
         width: 100%;
+        height: 100%;
     }
     .logo{
         width: 61.09px;
@@ -430,13 +433,18 @@ footer li{
         margin-top: 2%;   
     }
     nav{
-        width: 30%;
+        width: 36%;/*30%*/
         margin-right: 5%;
+        font-size: 15px;
+    }
+    .menu li:hover{
+        border-top: none;
+        color: black;
     }
  /* menu */
     .menu{  
-       display: flex;
-       align-items: flex-end;
+        display: flex;
+        align-items: flex-end;
     }
     main{
         margin-top: 5%;
@@ -478,7 +486,7 @@ footer li{
       }
       #filtres-categories {
         display: flex;
-        justify-content: space-between;
+        /*justify-content: space-between;*/
         width: 96%;
       }
       .filtres {
@@ -489,12 +497,12 @@ footer li{
       .filtre {
         margin-left: 13px;
         justify-content: flex-start;
-      }
+    }
       .filtre span {
         font-size: 11px;
         line-height: 13px;
         margin-right: 5px;
-      }
+    }
     
 /*info*/
     .info{
@@ -505,13 +513,15 @@ footer li{
     }
     .fa-solid.fa-info{
         margin-right: 1%;
+        font-size: 10px;
+        padding: 4px 7px 5px 7px;
     }
 /*hebergement à marseille*/
     .hebergement-marseille{
         width: 100%;
     }
     .hebergement-marseille h2{
-        Width:37%;
+        width:37%;
         font-size: 20px;
         margin-top: 4%;
         margin-bottom: 4%;
@@ -586,8 +596,8 @@ footer li{
     }
     .activite figcaption{
        /* height: 40px;*/
-       Width:182px;
-       Height:56px;
+        width:182px;
+        height:56px;
     }
     .activite h3{
         padding: 9px;
@@ -615,7 +625,11 @@ footer li{
         width: 100%;
         height: 92px;
         margin-left: 0;
-    }     
+        background-color: green;
+    } 
+    body{
+        background-color: red;
+    }    
     nav{ 
         width: 100%;
         margin-top: 5%;
@@ -641,6 +655,8 @@ footer li{
     .menu li{
         width: 100%;
         padding: 0;
+        border-bottom: grey 3px solid;
+        padding-bottom: 7%; 
     }
     /*bordure bleu du nav*/
     .menu li:hover{
@@ -654,6 +670,7 @@ footer li{
         margin-left: 0;
         margin-bottom: 5%;
         margin-top: 18%;
+        background-color: yellow;
     }
       
  /*corps de page */
@@ -706,7 +723,9 @@ footer li{
         margin-top: 3%;
     }
     .filtre{
+        
         margin-left: 13px;
+        display: flex;
         justify-content: flex-start;
     }
     .filtre span{
@@ -724,8 +743,9 @@ footer li{
         line-height: 19px;
     }
     .fa-solid.fa-info{
-        margin-bottom: 4%;
-        padding: 1px 7px 4px 7px;
+        margin-bottom: 5%;
+        padding: 2px 7px 4px 7px;
+        font-size: 12px;
     }
 /*section hebergements*/
     #hebergements{
@@ -765,7 +785,7 @@ footer li{
     /*populaire*/
     .populaire{
         width:100%;
-        Height:580px;
+        height:580px;
         background-color: none;
         border-radius: 0; 
     }
@@ -774,14 +794,26 @@ footer li{
         align-items: center;
         justify-content: space-between;
     }
-    .populaire h2, .fa-chart-line{
+    /*.populaire h2, .fa-chart-line{
         margin-left: 10%;
-        margin-top: 3%;
+        margin-top: 4%;
         margin-right: 8%;
     }
     .fa-chart-line{
         display: flex;
         margin-top: 0%;
+    }*/
+    .titre-populaire h2 {
+        width: 80%;
+        margin-left: 10%;
+        margin-top: 4%;
+        display: inline-block;
+    }
+    .fa-chart-line {
+        width: 10%;
+        display: inline-block;
+        margin-top: 0%;
+        margin-right: 8%;
     }
     .carte-pop{
         margin-top: 2%;
@@ -820,8 +852,8 @@ footer li{
     
 /*footer*/
     footer{
-        Width:100%;/*377px*/
-        Height:501px;
+        width:100%;/*377px*/
+        height:501px;
         flex-direction: column; 
         margin-left: 0%; 
     }
