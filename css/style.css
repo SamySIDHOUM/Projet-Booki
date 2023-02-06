@@ -78,11 +78,9 @@ input{
     text-align: center;
     border:none;
 }
-
 ::placeholder{
     color:#000000;
     font-weight: 700;
-   /* font-size: 18px;*/
 }
 form button{
     color: #FFFFFF;
@@ -110,13 +108,6 @@ form .fa-location-dot{
     height: 50px;
     border-radius: 15px 0px 0px 15px;
     background-color: #F2F2F2;
-}
-.monInput{
-    width: 250px;
-    height: 49px;
-    display: flex;
-    border-radius: 15px 0px 0px 15px;
-    border: 1px solid #F2F2F2;
 }
   /*partie filtres*/
 .noir{
@@ -146,14 +137,7 @@ form .fa-location-dot{
     margin-right: 12px;
     cursor: pointer;
 }
-.filtre{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin: 0;
-    width: 100%;
-}
-.filtre span{
+.filtres span{
     margin-left: 10px;
     margin-right: 20px;
 }
@@ -423,7 +407,7 @@ footer li{
         margin-top: 2%;   
     }
     nav{
-        width: 36%;/*30%*/
+        width: 36%;
         margin-right: 5%;
         font-size: 15px;
     }
@@ -467,7 +451,6 @@ footer li{
         width: 100%;
         height: 60%;
         display: flex;
-        flex-direction: center ;
         justify-content: space-around;
       }
       #titre-filtres {
@@ -483,11 +466,7 @@ footer li{
         align-items: center;
         justify-content: center;
     }
-      .filtre {
-        margin-left: 13px;
-        justify-content: flex-start;
-    }
-      .filtre span {
+      .filtres span {
         font-size: 11px;
         line-height: 13px;
         margin-right: 5px;
@@ -516,11 +495,9 @@ footer li{
         margin-bottom: 4%;
     }
     .cartes{
-        height: 75%;
-        
+        height: 75%; 
     }
     .carte{
-       /* height: 199px;*/
        width: 31%;
     }
     .carte figcaption{
@@ -553,7 +530,7 @@ footer li{
     }
     .cartes-pop{
         width: 96%;
-        height: 144px;/*60%;*/
+        height: 144px;
         margin-left: 2%;
     }
     .carte-pop{
@@ -586,14 +563,9 @@ footer li{
         height: 80%;
     }
     .activite figcaption{
-       /* height: 40px;*/
         width:182px;
         height:56px;
     }
-    /*.activite h3{
-        margin: auto;
-        font-size: 14px;
-    }*/
     .commun{
         display: flex;
         align-items: center;
@@ -635,11 +607,6 @@ footer li{
         flex-direction: column;
         width: 100%;
         height: 129px;
-       /* margin-left: 0;
-        margin-top: 0;*/
-        margin: 0;
-    } 
-    body{
         margin: 0;
     }    
     nav{ 
@@ -648,14 +615,11 @@ footer li{
         margin-left: 0;
     }
     .logo{
-        /*width: 20%;*/
         width: 61.09px;
         height: 19px;
         display: flex;
         align-items: center;
-        /*margin-left: 40%;*/
         margin-top: 5%;
-        /*margin-bottom: 10%;*/
     }
     /* menu */
     .menu {
@@ -679,10 +643,6 @@ footer li{
     main{
         width: 100%;
         height: 100%;
-        /*margin-right: 0;
-        margin-left: 0;
-        margin-bottom: 5%;
-        margin-top: 18%;*/
         margin: 0;
     }
       
@@ -693,7 +653,7 @@ footer li{
         margin-left: 5%;
     }  
     .description{
-        width: 100%;
+        width: 95%;
         font-size: 18px;
         margin-left: 5%;
     } 
@@ -702,17 +662,22 @@ footer li{
     }
 /*section recherche*/
     #recherche form{
-        margin-left: 5%; 
+        margin-left: 2%; 
+        width: 96%;
+    }
+    #recherche form input{
+        width: 70%;
     }
     .btn-texte{
         display: none;
     } 
     .btn-icone{
         display: flex;
+        width: 15%;
     }
 /*partie filtres*/
    #mes-filtres{
-        width: 100%;
+        width: 95%;
         height: 60%;
         display: flex;
         flex-direction: column;
@@ -728,22 +693,25 @@ footer li{
         justify-content: space-between;
         flex-direction: row;
         flex-wrap: wrap;
-        width: 96%;
+        width: 100%;
     }
     .filtres{
-        width: 45%;
+        display: flex;
+        align-items: center;
+        width: 48%;
         height: 50px;
-        margin-top: 3%;
+        margin: 3% 0 0 0;
     }
-    .filtre{
-        margin-left: 6px;
+    .filtres i{
+        width: 20%;
+        margin: 0;
+    }
+    .filtres span{
         display: flex;
         justify-content: flex-start;
-    }
-    .filtre span{
         font-size: 13px;
-        line-height: 13px;
-        margin-right: 5px;
+        margin: 0;
+        width: 90%;
     }
 /*info*/
     .info{
@@ -765,7 +733,7 @@ footer li{
         flex-wrap: wrap-reverse;
         justify-content: space-between;
         margin-top: 5%;
-        /*margin-left: 5%;*/
+      
     }
     /*hebergement à marseille*/
     .hebergement-marseille{
@@ -779,10 +747,11 @@ footer li{
         font-size: 22px;
         margin-top: 5%;
         margin-left: 10%;
+        width: 90%;
     }
     .cartes{
         width: 80%;
-        height: 1254px;/*60%;*/
+        height: 1254px;
         margin-left: 10%;
     }
     .carte{
@@ -806,7 +775,7 @@ footer li{
     .populaire{
         width:100%;
         height:580px;
-        background-color: none;
+        background-color: transparent;
         border-radius: 0; 
     }
     .titre-populaire{
@@ -845,8 +814,7 @@ footer li{
     }
     #activites h2{
         width: 54%;
-        Height:6%/*30.02px*/;
-        /*line-height: 26px;*/
+        Height:6%;
         margin:10% 0% 0% 10%;
     }
    .activite{
@@ -864,7 +832,7 @@ footer li{
     
 /*footer*/
     footer{
-        width:100%;/*377px*/
+        width:100%;
         height:501px;
         flex-direction: column; 
         margin: 0%; 
