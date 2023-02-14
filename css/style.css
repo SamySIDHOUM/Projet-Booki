@@ -19,18 +19,19 @@ a{
 header{
     display: flex;
     justify-content: space-between;
-    height: 40px;
-    margin-top: 5%;
+    height: 100px;
 }
 nav{
     width: 30%;
+    height: 100%;
 }
 .logo{
     height: 100%;
     width: 7%;
+    margin-top: 2%;
 }
 .logo img{
-    height: 80%;
+    height: 30%;
     width: 100%;
 }
 /* menu */
@@ -44,12 +45,14 @@ nav{
 }
 .menu li{
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
+    height: 100%;
+    width: 40%;
 }
 /*bordure bleu du nav*/
 .menu li:hover{
-    border-top: #0065FC 2px solid;
+    border-top: #0065FC 2px solid;    
 }
 .menu a:hover{
     color: #0065FC;
@@ -58,7 +61,7 @@ li.hebergements, li.activites{
     text-align: center;
     justify-content: space-between;   
     cursor: pointer;
- }
+}
  
 /*corps de page */
 h1{
@@ -76,7 +79,8 @@ h1{
 input{
     width: 200px; 
     text-align: center;
-    border:none;
+   /* border:none;*/
+    border: 1px #F2F2F2 solid;
 }
 ::placeholder{
     color:#000000;
@@ -204,7 +208,7 @@ button{
     height: 40%;
     background: #FFFFFF;
     border-radius: 20px;
-    box-shadow: 0px 0px 10px 10px #DEEBFF;
+    box-shadow: 0px 0px 10px 10px #DCDCDC;
 }
 .carte figure{
     width: 96%;
@@ -275,7 +279,7 @@ button{
     height: 30%;
     background: #FFFFFF;
     border-radius: 20px;
-    box-shadow: 0px 0px 10px 10px #DEEBFF;
+    box-shadow: 0px 0px 10px 10px #DCDCDC;
     margin-top: 7%;
 }
 .carte-pop figure{
@@ -395,31 +399,26 @@ footer li{
   /*tablette*/
 @media screen and (min-width:768px) and (max-width:991px){
 /*header*/
+    header{
+        height: 60px;
+    }   
     .logo img{
         width: 100%;
         height: 100%;
+        margin: 0;
     }
     .logo{
-        width: 61.09px;
-        height: 19px;
+        width: 10%;
+        height: 45%;
         display: flex;
         align-items: flex-end;
         margin-top: 2%;   
     }
     nav{
-        width: 36%;
-        margin-right: 5%;
+        width: 45%;
         font-size: 15px;
     }
-    .menu li:hover{
-        border-top: none;
-        color: black;
-    }
  /* menu */
-    .menu{  
-        display: flex;
-        align-items: flex-end;
-    }
     main{
         margin-top: 3%;
     }
@@ -611,15 +610,16 @@ footer li{
     }    
     nav{ 
         width: 100%;
-        margin-top: 5%;
+        height: 36%;
         margin-left: 0;
+        margin-top: 4%;
     }
     .logo{
-        width: 61.09px;
-        height: 19px;
+        width: 20%;
+        height: 60%;
         display: flex;
         align-items: center;
-        margin-top: 5%;
+        margin-top: 4%;
     }
     /* menu */
     .menu {
@@ -775,7 +775,7 @@ footer li{
     .populaire{
         width:100%;
         height:580px;
-        background-color: transparent;
+        background-color: #F2F2F2;
         border-radius: 0; 
     }
     .titre-populaire{
